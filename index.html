@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Jordie Juwono</title>
+
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h3>Jordie.J</h3>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#profile">Profile</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#experience">Experience</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="profile">
+            <div class="section-content">
+                <div>
+                    <p class="name">I'm <span class="span-blue">Jordie Juwono</span></p>
+                    <p class="job-position">I Am A <span class="span-blue">Mobile Developer</span><br>Based in Indonesia.</p>
+                    <p class="profile-description">Are you looking for a Mobile Developer to build<br>your brand or to grow your business?<br>Feel free to reach me out!</p>
+                </div>
+                <img src="./images/profile-photo.jpg" alt="profile-photo" class="profile-picture" width="300" height="300">
+            </div>
+        </section>
+        <section id="skills" class="section-container" data-aos="fade-up" data-aos-duration="2000">
+            <div>
+                <h2 class="section-header">Skills</h2>
+                <div class="skills-container">
+                    <div class="skills-item">
+                        <img src="https://download.logo.wine/logo/Kotlin_(programming_language)/Kotlin_(programming_language)-Logo.wine.png" alt="Kotlin" width="70" height="70">
+                        <h4>Kotlin</h4>
+                        <p>Kotlin is a programming language that makes coding concise, cross-platform, and fun. It is Google's preferred language for Android app development.</p>
+                    </div>
+                    <div class="skills-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flutter_logo.svg/2048px-Flutter_logo.svg.png" alt="Flutter" width="70" height="70">
+                        <h4>Flutter</h4>
+                        <p>Flutter is an open source framework by Google for building beautiful, natively compiled, multi-platform applications from a single codebase.</p>
+                    </div>
+                    <div class="skills-item">
+                        <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/swift_vertical_logo_icon_168769.png" alt="Swift" width="70" height="70">
+                        <h4>Swift</h4>
+                        <p>Swift is a general-purpose programming language that's approachable for newcomers and powerful for experts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="section-container" data-aos="fade-up" data-aos-duration="2000">
+            <div>
+                <h2 class="section-header">Experience</h2>
+                <ul>
+                    <li class="experience-item"><span class="experience-workplace">PT. Terralogiq Integrasi Solusi</span><br>Mobile Developer<br><span class="experience-duration">June 2022 - June 2023</span><br><span class="experience-description">Terralogiq is Google Maps Premier Partner in Indonesia that specialize in Location Intelligence. As a Mobile Developer my job responsibilities are creating mobile applications from scratch and collaborate with PM, UI/UX, System Analyst, Back-end, and QA.</span></li>
+                    <li class="experience-item"><span class="experience-workplace">PT. Indocyber Global Teknologi</span><br>Mobile Developer<br><span class="experience-duration">June 2023 - Present</span><br><span class="experience-description">Placement at PT. AXA Financial Indonesia. My job responsibilities as a Mobile Developer are developing AFI DNA Proposal and AFI DNA Sales Tool project.</span></li>
+                </ul>
+            </div>
+        </section>
+        <h2 class="section-header">Contact</h2>
+        <section id="contact" class="section-container" data-aos="fade-up" data-aos-duration="2000">
+            <div>
+            <form action="" method="post">
+                <div class="form-item">
+                    <label for="name">Enter your name: </label><br>
+                    <input type="text" name="name" id="form-name" placeholder="Enter your name" required />
+                </div>
+                <div class="form-item">
+                    <label for="email">Enter your email: </label><br>
+                    <input type="email" name="email" id="form-email" placeholder="Enter your email" required />
+                </div>
+                <div class="form-item">
+                    <label for="message">Enter your message:</label><br>
+                    <textarea id="form-message" name="message" rows="4" cols="50" placeholder="Enter your message" required></textarea>
+                </div>
+                <button>Send Message</button>
+            </form>
+            </div>
+            
+        </section>
+    </main>
+    <footer data-aos="fade-up" data-aos-duration="2000">
+        <div>
+            <a href="https://www.instagram.com/jordie.ju/" class="fa fa-instagram fa-5x" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://www.linkedin.com/in/jordie-juwono-582548227/" class="fa fa-linkedin fa-5x" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://github.com/jordiejuwono" class="fa fa-github fa-5x" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <span>&copy; 2024 - Jordie Juwono</span>
+    </footer>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
