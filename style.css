@@ -5,6 +5,7 @@
 body {
     margin: 0;
     background-color: #ededed;
+    position: relative;
 }
 
 .header  {
@@ -140,16 +141,22 @@ body {
     margin: 0 auto;
 }
 
-.experience-workplace {
+.projects-item {
+    padding-top: 16px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.list-title {
     font-weight: 600;
     font-size: 18px;
 }
 
-.experience-description {
+.list-description {
     font-size: 14px;
 }
 
-.experience-duration {
+.list-duration {
     color: #0047AB;
     font-size: 14px;
     font-weight: 600;
@@ -179,7 +186,7 @@ footer span {
     text-decoration: none;
   }
 
-#contact {
+.contact-contents {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,6 +236,10 @@ form button {
         justify-content: center;
         align-items: center;
         text-align: center;
+        position: sticky;
+    }
+    .header {
+        position: sticky;
     }
     .nav-list {
         flex-direction: column;
@@ -244,7 +255,12 @@ form button {
 
 @media (max-width: 700px) {
     .profile-content {
-        padding-top: 80%;
         flex-direction: column;
+    }
+    .header {
+        position: sticky;
+    }
+    form {
+        padding-bottom: 50px;
     }
 }
